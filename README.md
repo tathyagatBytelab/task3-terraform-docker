@@ -23,15 +23,15 @@ Provision a local Docker container using **Terraform** to understand and impleme
 ## 📝 Task Steps
 
 ###  1️⃣ Initialize Terraform
-```bash
+
 terraform init
 
 ###  2️⃣ Review the execution plan
-'''bash
+
 terraform plan
 
 ###  3️⃣ Apply the configuration
-'''bash
+
 terraform apply
 - This will pull the nginx:latest Docker image
 
@@ -41,6 +41,9 @@ terraform apply
 
 
 ###  4️⃣ Destroy the infrastructure after testing
-'''bash
+
 terraform destroy
+
+### OUTPUT SCREENSHOT
+![NGINX Running](ngnix_screenshot.png)
 
