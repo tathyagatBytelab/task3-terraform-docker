@@ -1,0 +1,30 @@
+# terraform init
+Terraform has been successfully initialized!
+
+# terraform plan
+Plan: 2 to add, 0 to change, 0 to destroy.
+
+# terraform apply
+Do you want to perform these actions?
+  Terraform will perform the actions described above.
+  Only 'yes' will be accepted to approve.
+Enter a value: yes
+
+docker_image.nginx: Creation complete after 38s
+docker_container.nginx: Creation complete after 1s
+
+Apply complete! Resources: 2 added.
+
+# terraform apply (second run - change port or recreate)
+Plan: 1 to add, 0 to change, 1 to destroy.
+Enter a value: yes
+
+docker_container.nginx: Destruction complete after 0s
+docker_container.nginx: Creation complete after 1s
+
+Apply complete! Resources: 1 added, 0 changed, 1 destroyed.
+
+# docker ps
+CONTAINER ID   IMAGE          PORTS                  NAMES
+754507efd9ce   nginx:latest   0.0.0.0:8090->80/tcp   nginx-container
+
